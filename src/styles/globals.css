@@ -9,6 +9,19 @@
     body {
       @apply bg-black text-white;
     }
+
+    .modals-wrapper {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+    
+    .modal {
+      padding: 0.5rem 1rem;
+      color: white;
+      background: green;
+      margin-bottom: 0.5rem;
+    }    
 }
 
 @tailwind components;
