@@ -1,18 +1,18 @@
 import Header from "@/components/Header";
-import { useModalContext } from "@/contexts/ModalContext";
+import { useToastContext } from "@/contexts/ToastContext";
 
 const Parent1 = () => {
-    const addModal = useModalContext();
+    const addToast = useToastContext();
     
     function handleClick() {
-        addModal("sadsaqqq");
+        addToast("sadsaqqq");
     }
 
     return (
         <main>
             <Header/>
             <div>Parent1</div>
-            <button onClick={handleClick}>open modal</button>
+            <button onClick={handleClick}>open toast</button>
         </main>
     )
 }

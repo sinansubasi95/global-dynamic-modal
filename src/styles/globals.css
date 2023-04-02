@@ -10,13 +10,13 @@
       @apply bg-black text-white;
     }
 
-    .modals-wrapper {
+    .toasts-wrapper {
       position: fixed;
       top: 1rem;
       right: 1rem;
     }
     
-    .modal {
+    .toast {
       padding: 0.5rem 1rem;
       color: white;
       background: green;

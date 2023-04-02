@@ -1,10 +1,10 @@
-import { ModalContextProvider } from '@/contexts/ModalContext'
+import { ToastContextProvider } from '@/contexts/ToastContext'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return (
-    <ModalContextProvider>
+    <ToastContextProvider>
       <Component {...pageProps} />
-    </ModalContextProvider>
+    </ToastContextProvider>
   )
 }
