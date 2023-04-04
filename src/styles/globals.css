@@ -21,7 +21,26 @@
       color: white;
       background: green;
       margin-bottom: 0.5rem;
-    }    
+    }
+
+    .modals-wrapper {
+      position: fixed;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+    
+    .modal {
+      width: 250px;
+      height: 250px;
+      color: black;
+      background: white;
+    }
+
+    .active {
+      opacity: 1;
+      pointer-events: all;
+    }
 }
 
 @tailwind components;

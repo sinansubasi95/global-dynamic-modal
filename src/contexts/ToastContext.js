@@ -10,6 +10,7 @@ export function ToastContextProvider({children}) {
     const addToast = useCallback(
         function(toast) {
             setToasts(toasts => [...toasts, toast]);
+            // setTimeout(() => setToasts((toasts) => toasts.slice(1)), 3000);
         },
         [setToasts]
     );
