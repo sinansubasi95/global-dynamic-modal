@@ -279,12 +279,12 @@ const Parent2 = () => {
                 }}>write sinan</button> */}
                 {/* <button onClick={() => console.log(test)}>read sinan</button> */}
                 <button onClick={() => {
-                    experiment.promise(
-                        fetchUser,
+                    experiment.open(
+                        fetchUser(),
                         {
-                          loading: (id) => <LoadingComponent onClose={() => experiment.close(id)} />,
-                          success: (id, data) => <ModalSuccess onClose={() => experiment.close(id)} onSave={() => saveUser(data)} data={data} />,
-                          error: (err) => `This just happened: ${err.toString()}`,
+                          loading: (m) => <LoadingComponent onClose={() => experiment.close(m.id)} />,
+                          success: (m, data) => <ModalSuccess onClose={() => experiment.close(m.id)} onSave={() => saveUser(data)} data={data} />,
+                          error: (m, err) => `This just happened: ${err.toString()}`,
                         },
                     )
                 }}>experiment</button>
